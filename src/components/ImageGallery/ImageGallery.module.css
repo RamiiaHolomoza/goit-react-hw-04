@@ -1,0 +1,19 @@
+.cardList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  width: calc((100% - 3 * 10px) / 4);
+  transition: transform 0.2s;
+}
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}

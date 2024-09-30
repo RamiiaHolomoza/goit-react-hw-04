@@ -1,9 +1,19 @@
 import s from "./ImageCard.module.css";
 
-const ImageCard = ({ image }) => {
+const ImageCard = ({ image, onModalImg }) => {
   return (
-    <div className={s.img}>
-      <img src={image.urls.small} alt={image.alt_description} width="50"></img>
+    <div>
+      <img
+        className={s.img}
+        src={image.urls.small}
+        alt={image.alt_description}
+        width="50"
+        onClick={() => {
+          onModalImg({
+            regularUrl: image.urls.regular,
+          });
+        }}
+      ></img>
     </div>
   );
 };

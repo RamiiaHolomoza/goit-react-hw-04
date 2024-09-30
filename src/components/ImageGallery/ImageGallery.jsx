@@ -1,13 +1,13 @@
 import ImageCard from "../ImageCard/ImageCard";
 import s from "./ImageGallery.module.css";
 
-const ImageGallery = ({ images }) => {
+const ImageGallery = ({ images, onModalImg }) => {
   return (
     <ul className={s.cardList}>
       {images.map((image) => {
         return (
           <li className={s.card} key={image.id}>
-            <ImageCard image={image}></ImageCard>
+            <ImageCard image={image} onModalImg={onModalImg}></ImageCard>
           </li>
         );
       })}

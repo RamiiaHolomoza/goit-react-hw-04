@@ -1,0 +1,39 @@
+header {
+  background-color: rgb(236, 115, 131);
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.input {
+  width: 450px;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  color: azure;
+  transition: transform 0.2s;
+  border: 1px solid azure;
+  border-radius: 30px;
+}
+
+.btn:hover,
+.btn:focus {
+  color: azure;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.btn:active {
+  color: azure;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
